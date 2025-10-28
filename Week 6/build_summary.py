@@ -34,7 +34,6 @@ with DAG(
         """,
     )
 
-    # Extra point: check for duplicates upstream
     duplicate_guard = SnowflakeOperator(
         task_id="duplicate_guard",
         snowflake_conn_id="snowflake_default",
@@ -51,7 +50,6 @@ with DAG(
         """,
     )
 
-    # Upsert the joined, deduped data into analytics.session_summary
     upsert_summary = SnowflakeOperator(
         task_id="upsert_summary",
         snowflake_conn_id="snowflake_default",
