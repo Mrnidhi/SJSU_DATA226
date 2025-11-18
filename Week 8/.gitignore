@@ -1,0 +1,17 @@
+# Airflow
+airflow/logs/
+airflow/__pycache__/
+
+# dbt
+*.duckdb
+dbt/target/
+dbt/logs/
+
+# Local
+.env
+__pycache__/
+*.pyc
+data/raw/*
+data/processed/*
+screenshots/*
+

@@ -1,0 +1,6 @@
+apache-airflow-providers-snowflake
+sentence-transformers
+pinecone
+yfinance
+pandas
+requests
